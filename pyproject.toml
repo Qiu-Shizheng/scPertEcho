@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scpertecho"
+version = "1.0.0"
+description = "Predict and compare single-cell perturbation responses with scPertEcho"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "scPertEcho contributors"}]
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+inference = ["torch>=2.1"]
+
+[project.urls]
+Repository = "https://github.com/Qiu-Shizheng/scPertEcho"
+Releases = "https://github.com/Qiu-Shizheng/scPertEcho/releases"
+
+[project.scripts]
+scpertecho = "scpertecho.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

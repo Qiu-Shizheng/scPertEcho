@@ -1,0 +1,45 @@
+{
+  "model_parameters": 1298528,
+  "comparison_shape": [
+    3,
+    513
+  ],
+  "real_reference_profiles": 8,
+  "published_numeric_errors": {
+    "response": 5.587935447692871e-08,
+    "de_score": 4.470348358154297e-08
+  },
+  "source_network_error": 1.9371509552001953e-07,
+  "demo": {
+    "rows": 2,
+    "genes": 4,
+    "outputs": [
+      "row_id",
+      "gene_id",
+      "rna_residual",
+      "de_logit_residual",
+      "response",
+      "de_score"
+    ],
+    "first_response": 0.027071,
+    "first_de_score": 0.257379
+  },
+  "match": {
+    "genes_used": 3,
+    "genes_excluded": 1,
+    "direct_cost": 16.0,
+    "swapped_cost": 0.0,
+    "tie": false,
+    "assignment": {
+      "candidate-A": "sample-2",
+      "candidate-B": "sample-1"
+    }
+  },
+  "synthetic_control_tutorial": {
+    "shape": [
+      2,
+      5
+    ],
+    "first_value": 0.0035144956782460213
+  }
+}
